@@ -1,14 +1,12 @@
 <div align="center">
 
-# 🧠 LLM Json Fixer
+# 🧠 LLM JSON Fixer
 
 <h3>Robust Utility to Fix Messy AI-Generated JSON</h3>
 
 [![Python](https://img.shields.io/badge/Python-3.7%2B-blue?style=for-the-badge\&logo=python\&logoColor=white)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 [![PyPI version](https://img.shields.io/pypi/v/llm_json_fixer?style=for-the-badge\&color=orange)](https://pypi.org/project/llm_json_fixer/)
-[![Tests](https://img.shields.io/github/actions/workflow/status/yourusername/llm_json_fixer/test.yml?label=tests\&style=for-the-badge)](https://github.com/yourusername/llm_json_fixer/actions)
-
 </div>
 
 ---
