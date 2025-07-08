@@ -83,7 +83,7 @@ def fix_json(json_string: str, return_dict: bool = False) -> Union[Any, dict]:
     json_string = re.sub(r'\bNone\b', 'null', json_string)
     
     # Fix unquoted keys
-    json_string = re.sub(r'(\w+)(?=\s*:)', r'"\1"', json_string)
+    # json_string = re.sub(r'(\w+)(?=\s*:)', r'"\1"', json_string)
     
     # Remove trailing commas
     json_string = re.sub(r',\s*}', '}', json_string)
@@ -138,6 +138,7 @@ def fix_json(json_string: str, return_dict: bool = False) -> Union[Any, dict]:
             return {'success': True, 'data': result, 'error': None, 'fixes_applied': fixes_applied}
         return result
     except json.JSONDecodeError as e:
+        print(json_string)
         if return_dict:
             return {'success': False, 'data': None, 'error': str(e), 'fixes_applied': fixes_applied}
         return None
